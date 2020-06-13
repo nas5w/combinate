@@ -1,12 +1,11 @@
 function combinate<O extends Record<string | number, any>>(obj: O) {
-  var combos: { [k in keyof O]: O[k][number] }[] = [];
+  let combos: { [k in keyof O]: O[k][number] }[] = [];
   for (var key in obj) {
-    var k = key as keyof O;
-    var values = obj[k];
-    var all = [];
-    for (var i = 0; i < values.length; i++) {
-      for (var j = 0; j < (combos.length || 1); j++) {
-        var newCombo = { ...combos[j], [k]: values[i] };
+    const values = obj[key];
+    const all = [];
+    for (let i = 0; i < values.length; i++) {
+      for (let j = 0; j < (combos.length || 1); j++) {
+        const newCombo = { ...combos[j], [key]: values[i] };
         all.push(newCombo);
       }
     }
