@@ -1,9 +1,8 @@
 import combinate from "../index";
 
 describe("combinate", () => {
-  it("generates combinations for empty object", () => {
-    const combos = combinate({});
-    expect(combos).toEqual([]);
+  it("generates combinations for an empty object", () => {
+    expect(combinate({})).toEqual([]);
   });
   it("generates combinations", () => {
     var obj = {
