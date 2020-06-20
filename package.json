@@ -34,5 +34,8 @@
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
