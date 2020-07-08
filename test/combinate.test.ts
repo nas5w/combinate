@@ -4,12 +4,13 @@ describe("combinate", () => {
   it("generates combinations for an empty object", () => {
     expect(combinate({})).toEqual([]);
   });
+
   it("generates combinations", () => {
-    var obj = {
+    const obj = {
       x: [1, 2, 3],
       y: ["a", "b"],
       z: [20, 30],
-    } as const;
+    };
     const combos = combinate(obj);
     expect(combos).toEqual([
       { x: 1, y: "a", z: 20 },
