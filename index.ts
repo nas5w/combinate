@@ -1,4 +1,4 @@
-function combinate<O extends Record<string | number, any>>(obj: O) {
+function combinate<O extends Record<string | number, any[]>>(obj: O) {
   let combos: { [k in keyof O]: O[k][number] }[] = [];
   for (var key in obj) {
     const values = obj[key];
