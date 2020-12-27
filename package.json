@@ -1,6 +1,6 @@
 {
   "name": "combinate",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Get all combinations.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.0",
     "@types/node": "^14.0.13",
-    "jest": "^26.0.1",
+    "jest": "^26.6.3",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
   },
