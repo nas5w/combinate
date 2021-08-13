@@ -1,6 +1,6 @@
 {
   "name": "combinate",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Type safe combinatorics utility for getting all combinations.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
